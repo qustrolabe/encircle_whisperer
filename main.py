@@ -36,7 +36,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     )
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text("Please send a video that is 640x640 in resolution and has a duration of 60 seconds or less, or audio you want whispered back")
+    await update.message.reply_text("Please send 640x640 video shorter than 60s or audio file.")
 
 async def whisper_reply(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     audio: Audio = update.message.audio
