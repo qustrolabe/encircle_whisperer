@@ -62,7 +62,6 @@ async def encircle_reply(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         await update.message.reply_text("Video must be 640x640 60s long got %sx%s %ss long" % (video.width, video.height, video.duration))
 
 async def text_reply(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_voice("test1.opus")
     await help_command(update, context)
 
 def main() -> None:
